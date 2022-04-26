@@ -88,7 +88,7 @@ String pname,catgry;JSONObject json;
 		tv.setVisibility(View.GONE);
 
 		setTitle("Product List");
-		Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 	}
 	class productlist extends AsyncTask<String, String, String> {
