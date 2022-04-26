@@ -28,7 +28,7 @@
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:fontFamily="sans-serif-black"
-              android:text="Furniture Shopping is the app to get exclusive deals on everything home. We’re talking major coupon bump-ups and deals on your favorite home brands - all available only on the Furniture Shopping app. All the things you want to improve the look of your home for less. Sign up for price alerts to shop rugs, living and dining room furniture, and garden and patio. You won’t find these home savings anywhere else on the internet. And deals drop daily right here on the Furniture Shopping app. We’ll even alert you when they do. Plus, with the Furniture Shopping app, get free shipping on EVERYTHING!"
+              android:text="HEllo"
               android:textAlignment="center"
               android:textSize="20sp" />
 
@@ -39,16 +39,35 @@
                 android:background="?android:attr/listDivider" />
 
             <TextView
-                android:id="@+id/textView6"
-                android:layout_width="match_parent"
-                android:layout_height="119dp"
-                android:text="Developers:
-                                                Madda Siddhardha       A04236134
-                                                Vigna Likhitha Krovi   A04257534
-                                                Sai Teja Bijja               A04235113"
-                android:textAlignment="center"
-                android:textColor="#0B0A0A"
-                android:textSize="20sp" />
+              android:layout_width="wrap_content"
+              android:id="@+id/developers"
+              android:text="Developers"
+              android:textSize="20sp"
+              android:fontFamily="sans-serif-black"
+              android:layout_height="wrap_content"/>
+
+            <TextView
+              android:layout_width="match_parent"
+              android:id="@+id/developer1"
+              android:text="Madda Siddhardha       A04236134"
+              android:textSize="20sp"
+              android:layout_height="wrap_content"/>
+
+            <TextView
+              android:layout_width="match_parent"
+              android:id="@+id/developer2"
+              android:text="Vigna Likhitha Krovi     A04257534"
+              android:textSize="20sp"
+              android:layout_height="wrap_content"/>
+
+            <TextView
+              android:layout_width="match_parent"
+              android:id="@+id/developer3"
+              android:text="Sai Teja Bijja                  A04235113"
+              android:textSize="20sp"
+              android:layout_height="wrap_content"/>
+
+
 
             <View
                 android:id="@+id/divider2"

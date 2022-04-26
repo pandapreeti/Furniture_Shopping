@@ -33,6 +33,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class ProductList extends AppCompatActivity implements AdapterView.OnItemClickListener{
 	EditText  rno,pwd;
@@ -87,7 +88,7 @@ String pname,catgry;JSONObject json;
 		tv.setVisibility(View.GONE);
 
 		setTitle("Product List");
-		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
 	}
 	class productlist extends AsyncTask<String, String, String> {
