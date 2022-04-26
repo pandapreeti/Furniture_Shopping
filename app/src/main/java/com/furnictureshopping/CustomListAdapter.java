@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
+import com.bumptech.glide.Glide;
 
 public class CustomListAdapter extends BaseAdapter {
 	private Activity activity;
@@ -55,7 +56,7 @@ public class CustomListAdapter extends BaseAdapter {
 
 		if (imageLoader == null)
 			imageLoader = AppController.getInstance().getImageLoader();
-		NetworkImageView thumbNail = (NetworkImageView) convertView
+		ImageView thumbNail =  convertView
 				.findViewById(R.id.thumbnail);
 		TextView title = (TextView) convertView.findViewById(R.id.title);
 		TextView rating = (TextView) convertView.findViewById(R.id.rating);
@@ -68,7 +69,8 @@ public class CustomListAdapter extends BaseAdapter {
 		ProductView m = movieItems.get(position);
 
 		// thumbnail image
-		thumbNail.setImageUrl(m.getThumbnailUrl(), imageLoader);
+		Glide.with(mcontext).load(m.getThumbnailUrl()).into(thumbNail);
+		//thumbNail.setImageUrl(m.getThumbnailUrl(), imageLoader);
 		
 		// title
 		title.setText(m.getTitle());
