@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+
+    <item
+        android:id="@+id/action_notifications"
+        android:icon="@drawable/ic_menu_cart"
+        android:title="Notifications"
+        app:showAsAction="always" />
+    <item android:id="@+id/aboutUs"
+      android:title="About Us"/>
+
+    <item android:id="@+id/history"
+        android:title="History"/>
+    <item android:id="@+id/logout"
+        android:title=" Logout "/>
+</menu>

@@ -1,0 +1,95 @@
+<!-- copyrighted content owned by Android Arena (www.androidarena.co.in)-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:orientation="vertical"
+            android:background="@drawable/bgf"
+            android:gravity="center_horizontal"
+            >
+
+            <ImageView android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/usr"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <EditText
+                android:id="@+id/uid"
+                android:layout_width="259dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="#f3f3f3"
+                android:hint="User Id"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/pwd"
+                android:layout_width="259dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="#f3f3f3"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp" />
+
+
+            <Button android:layout_width="190dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="Login"
+                android:textColor="#fff"
+                android:textSize="13dp"
+                android:onClick="login"
+                android:id="@+id/login"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorAccent"/>
+
+<!--
+
+         <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="126dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="63dp"
+                android:src="@drawable/ulogin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                app:backgroundTint="#ef473a"
+                android:layout_marginRight="20dp"
+                />
+-->
+
+
+            <Button
+                android:id="@+id/fab"
+                android:layout_width="190dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="Register"
+                android:textColor="#fff"
+                android:textSize="13dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorAccent"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fur3"
+    android:orientation="vertical"
+    android:padding="10dip">
+
+    <!-- Text Label -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="276dp"
+        android:layout_height="118dp"
+        android:layout_gravity="center"
+        android:fontFamily="cursive"
+        android:text="The Art of       Living"
+        android:textAlignment="center"
+        android:textColor="#0B0A0A"
+        android:textSize="48sp" />
+
+    <TextView
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dip"
+        android:layout_marginBottom="15dp"
+        android:background="#AAC58A"
+        android:fontFamily="cursive"
+        android:text="Choose Furniture Type"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Spinner Element -->
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:background="@android:drawable/btn_dropdown" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="190dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorAccent"
+        android:onClick="search"
+        android:text="Search"
+        android:textColor="#fff"
+        android:textSize="13dp" />
+
+
+</LinearLayout>

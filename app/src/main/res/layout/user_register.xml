@@ -1,0 +1,90 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/unm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:hint="User Id"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textStyle="bold"
+              />
+
+
+
+            <EditText
+                android:id="@+id/passwd_edtext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unm"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+
+                android:gravity="center"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/empid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passwd_edtext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+
+                android:gravity="center"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/mno"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                  android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:layout_marginBottom="25dp"
+                android:hint="Mobile No."
+                android:inputType="phone"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                  android:layout_below="@+id/empid" />
+
+            <Button android:layout_width="190dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/mno"
+                android:text="Submit"
+                android:textColor="#fff"
+                android:textSize="13dp"
+                android:onClick="register"
+                android:id="@+id/register_button"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorAccent"/>
+
+
+        </RelativeLayout>
+
+
+</RelativeLayout>
